@@ -25,7 +25,7 @@ export async function releaseExpiredReservations(): Promise<number> {
 
   // Update statuses in bulk
   await prisma.reservation.updateMany({
-    where: { id: { in: expired.map((r) => r.id) } },
+    where: { id: { in: expired.map((r: { id: string }) => r.id) } },
     data: { status: "RELEASED" },
   });
 
