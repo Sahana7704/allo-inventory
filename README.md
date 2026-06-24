@@ -1,3 +1,4 @@
+Live on: https://allo-inventory-2smh.vercel.app/
 # Allo Inventory — Take-Home Exercise
 
 Multi-warehouse inventory reservation platform built with Next.js 15, Prisma, PostgreSQL, and Redis.
